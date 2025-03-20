@@ -62,7 +62,9 @@ Head Synthesis with Audio-Driven and Blendshape-Based 3D Gaussian Splatting</h1>
                     <a href="https://jessezhang92.github.io/" target="_blank">Zhenyu Zhang</a><sup>2*</sup>,</span>
                     <a href="http://www.patternrecognition.asia/qian/" target="_blank">Jianjun Qian</a><sup>1</sup>,</span>
                     <a href="https://scholar.google.com.hk/citations?user=6CIDtZQAAAAJ&hl=zh-CN&oi=ao" target="_blank">Jian Yang</a><sup>1*</sup>,</span>
-                    <br><span>Author 1 (corresponding author)</span>
+                    <br><span>1 Nanjing University of Science and Technology</span>
+                    <br><span>2 Nanjing University</span>
+                    <br><span>* corresponding author</span>
                   </span>
                   </div>
 
@@ -79,7 +81,7 @@ Head Synthesis with Audio-Driven and Blendshape-Based 3D Gaussian Splatting</h1>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://anonymous-hub1127.github.io/FYM.github.io/" target="_blank"
+                    <a href="https://njust-yang.github.io/GaussianEmoTalker.github.io/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -90,7 +92,7 @@ Head Synthesis with Audio-Driven and Blendshape-Based 3D Gaussian Splatting</h1>
               
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://anonymous-hub1127.github.io/FYM.github.io/" target="_blank"
+                  <a href="https://njust-yang.github.io/GaussianEmoTalker.github.io/" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -107,23 +109,6 @@ Head Synthesis with Audio-Driven and Blendshape-Based 3D Gaussian Splatting</h1>
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video preload="auto"poster="" id="tree" autoplay controls muted loop width="600px" outline="0px"> 
-        <!-- Your video -->
-<!--         <source src="pics/teaser.mp4" -->
-        <source src="pics/speaking_zimu.mp4"
-        type="video/mp4">
-      </video>
-      <!-- <h2 class="subtitle has-text-centered"> 
-      </h2> -->
-    </div>
-  </div> 
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -132,9 +117,7 @@ Head Synthesis with Audio-Driven and Blendshape-Based 3D Gaussian Splatting</h1>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Pre-trained conditional diffusion models have demonstrated remarkable potential in image editing. However, they often face challenges with temporal consistency, particularly in the talking head domain, where continuous changes in facial expressions intensify the level of difficulty. These issues stem from the independent editing of individual images and the inherent loss of temporal continuity during the editing process. In this paper, we introduce Follow Your Motion (FYM), a generic framework for maintaining temporal consistency in portrait editing.
-Specifically, given portrait images rendered by a pre-trained 3D Gaussian Splatting model, we first develop a diffusion model that intuitively and inherently learns motion trajectory changes at different scales and pixel coordinates, from the first frame to each subsequent frame. This approach ensures that temporally inconsistent edited avatars inherit the motion information from the rendered avatars. Secondly, to maintain fine-grained expression temporal consistency in talking head editing, we propose a dynamic re-weighted attention mechanism. This mechanism assigns higher weight coefficients to landmark points in space and dynamically updates these weights based on landmark loss, achieving more consistent and refined facial expressions. Extensive experiments demonstrate that our method outperforms existing approaches in terms of temporal consistency and can be used to optimize and compensate for temporally inconsistent outputs in a range of applications, such as text-driven editing, relighting, and various other applications.
-          </p>
+            Recent advancements in audio-driven avatar animation have significantly enhanced the generation of speech-based conversational videos. Despite achieving commendable lip synchronization and video quality, existing methods often fall short in producing emotion-driven conversational videos and lack real-time generation capabilities. This paper introduces a novel framework, GaussianEmoTalker, for the editing and real-time generation of emotion-driven talking head avatars. Specifically, GaussianEmoTalker begins by constructing an identity-specific neutral emotion space using 3D Gaussian blendshapes, which is then synchronized with emotion, mesh, and audio-driven deformations. The 3D Gaussian properties are encoded into a shared implicit feature representation, which is then fused with audio features, mesh displacement-encoded features, emotion, and intensity encodings. These combined features are fed into a spatial-audio-emotion attention module to predict the offsets for each Gaussian property. Extensive experiments show that, compared to other emotion-driven animation methods, our approach achieves state-of-the-art performance in both emotional expression and animation generation.
         </div>
       </div>
     </div>
