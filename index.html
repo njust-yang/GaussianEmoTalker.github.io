@@ -125,7 +125,7 @@ Head Synthesis with Audio-Driven and Blendshape-Based 3D Gaussian Splatting</h1>
 </section>
 <!-- End paper abstract -->
 
-<!-- Paper poster -->
+
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -135,7 +135,23 @@ Head Synthesis with Audio-Driven and Blendshape-Based 3D Gaussian Splatting</h1>
           <img src="./pics/Fig 1.png" alt="pipeline" style="max-width: 100%; height: auto;">
         </div>
         <h2 class="subtitle has-text-justified">
-          FYM begins with an efficient 3DGS model to render temporally consistent portraits. Next, we develop a diffusion model that intuitively and inherently learns the motion trajectories changes at different scales and pixel coordinates from the original video frames. Finally, we propose a dynamic re-weighted attention mechanism. This mechanism assigns higher weight coefficients to landmark coordinates in space and dynamically updates these weights based on landmark loss, achieving more consistent and refined facial expressions.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<!-- Paper poster -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Methodology</h2>
+        <div class="has-text-centered">
+          <img src="./pics/Fig 2.png" alt="pipeline" style="max-width: 100%; height: auto;">
+        </div>
+        <h2 class="subtitle has-text-justified">
+          GaussianEmoTalker uses the expression basis of GaussianBlendshapes to construct the neutral state space for the talking head (Stage 1). Through a pre-trained audio-to-expression model, it obtains the neutral expression coefficients and emotional expression coefficients. The former is initialized with the corresponding mesh and Gaussian attributes obtained in Stage 1. The latter is derived from the LBS (Linear Blend Skinning) in the emotion state space constructed by 3D Gaussian, resulting in a deformed mesh. The difference between the two meshes, along with the audio, emotion, and intensity labels, undergoes cross-attention computation to obtain the final Gaussian attribute offset for the specified emotion, generating the final emotional talking head (Stage 2).
         </h2>
       </div>
     </div>
