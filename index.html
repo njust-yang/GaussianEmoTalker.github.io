@@ -1,1 +1,460 @@
-Hello, here is GaussianEmoTalker!
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title> Follow Your Motion: A Generic Temporal Consistency Portrait Editing Framework with Trajectory Guidance</title>
+  <link rel="icon" type="image/x-icon" href="static/images/WIS.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><span style="color: rgb(255, 105, 180);">F</span><span style="color: rgb(255, 223, 0);">o</span><span style="color: rgb(255, 182, 193);">l</span><span style="color: rgb(183, 110, 121);">l</span><span style="color: rgb(255, 127, 80);">o</span><span style="color: rgb(250,119,182);">w</span> <span style="color: rgb(75, 54, 232);">Y</span><span style="color: rgb(255, 127, 80);">o</span><span style="color: rgb(183, 110, 121);">u</span><span style="color: rgb(34, 110, 121);">r</span> <span style="color: rgb(183, 34, 121);">M</span><span style="color: rgb(183, 110, 100);">o</span><span style="color: rgb(183, 110, 121);">t</span><span style="color: rgb(113, 110, 121);">i</span><span style="color: rgb(183, 40, 121);">o</span><span style="color: rgb(255, 127, 80);">n</span>: A Generic Temporal Consistency Portrait Editing
+ Framework with Trajectory Guidance</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+      
+                    <a href="https://anonymous-hub1127.github.io/FYM.github.io/" target="_blank">Anonymous authors</a><sup></sup>,</span>
+                  </span>
+                  </div>
+
+                 
+
+                  <div class="is-size-3 publication-authors">
+                    <span class="author-block">Under Submission</span>
+
+                  </div>
+
+                
+
+            
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://anonymous-hub1127.github.io/FYM.github.io/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code(Coming soon)</span>
+                  </a>
+                </span>
+              
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://anonymous-hub1127.github.io/FYM.github.io/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv(Coming soon)</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video preload="auto"poster="" id="tree" autoplay controls muted loop width="600px" outline="0px"> 
+        <!-- Your video -->
+<!--         <source src="pics/teaser.mp4" -->
+        <source src="pics/speaking_zimu.mp4"
+        type="video/mp4">
+      </video>
+      <!-- <h2 class="subtitle has-text-centered"> 
+      </h2> -->
+    </div>
+  </div> 
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Pre-trained conditional diffusion models have demonstrated remarkable potential in image editing. However, they often face challenges with temporal consistency, particularly in the talking head domain, where continuous changes in facial expressions intensify the level of difficulty. These issues stem from the independent editing of individual images and the inherent loss of temporal continuity during the editing process. In this paper, we introduce Follow Your Motion (FYM), a generic framework for maintaining temporal consistency in portrait editing.
+Specifically, given portrait images rendered by a pre-trained 3D Gaussian Splatting model, we first develop a diffusion model that intuitively and inherently learns motion trajectory changes at different scales and pixel coordinates, from the first frame to each subsequent frame. This approach ensures that temporally inconsistent edited avatars inherit the motion information from the rendered avatars. Secondly, to maintain fine-grained expression temporal consistency in talking head editing, we propose a dynamic re-weighted attention mechanism. This mechanism assigns higher weight coefficients to landmark points in space and dynamically updates these weights based on landmark loss, achieving more consistent and refined facial expressions. Extensive experiments demonstrate that our method outperforms existing approaches in terms of temporal consistency and can be used to optimize and compensate for temporally inconsistent outputs in a range of applications, such as text-driven editing, relighting, and various other applications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Paper poster -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Methodology</h2>
+        <div class="has-text-centered">
+          <img src="./pics/Fig 1.png" alt="pipeline" style="max-width: 100%; height: auto;">
+        </div>
+        <h2 class="subtitle has-text-justified">
+          FYM begins with an efficient 3DGS model to render temporally consistent portraits. Next, we develop a diffusion model that intuitively and inherently learns the motion trajectories changes at different scales and pixel coordinates from the original video frames. Finally, we propose a dynamic re-weighted attention mechanism. This mechanism assigns higher weight coefficients to landmark coordinates in space and dynamically updates these weights based on landmark loss, achieving more consistent and refined facial expressions.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End paper poster -->
+
+<section class="comparison">
+  <div class="container is-max-desktop" style="text-align: center;">
+    <div class="hero-body">
+     <h2 class="title is-3">Comparisons with Video Editing Methods</h2>
+      <video preload="auto"poster="" id="tree" autoplay controls muted loop width="600px" outline="0px"> 
+        <!-- Your video -->
+<!--         <source src="pics/demo.mp4" -->
+        <source src="pics/demo.mp4"
+        type="video/mp4">
+      </video>
+      <!-- <h2 class="subtitle has-text-centered"> 
+      </h2> -->
+    </div>
+  </div> 
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">The Editing Results of Our Method: InstructPix2Pix+FYM</h2>
+        
+        <h3 class="subtitle is-5">Prompt: Change him into Lego style</h3>
+        
+        <!-- 视频容器，使用 Flexbox 布局 -->
+        <div class="video-container">
+          <div class="video-item">
+            <video poster="" id="comp_avatar_1" autoplay controls muted loop playsinline>
+              <source src="./pics/demo1r.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">original</p>
+          </div>
+          
+          <div class="video-item">
+            <video poster="" id="comp_avatar_2" autoplay controls muted loop playsinline>
+              <source src="./pics/demo1e.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">edited results</p>
+          </div>
+        </div>
+
+        <h3 class="subtitle is-5">Prompt: Give him a mustache</h3>
+        
+        <!-- 视频容器，使用 Flexbox 布局 -->
+        <div class="video-container">
+          <div class="video-item">
+            <video poster="" id="comp_avatar_1" autoplay controls muted loop playsinline>
+              <source src="./pics/demo2r.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">original</p>
+          </div>
+          
+          <div class="video-item">
+            <video poster="" id="comp_avatar_2" autoplay controls muted loop playsinline>
+              <source src="./pics/demo2e.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">edited results</p>
+          </div>
+        </div>
+
+        <h3 class="subtitle is-5">Prompt: Change her into a character in Super Mario</h3>
+        
+        <!-- 视频容器，使用 Flexbox 布局 -->
+        <div class="video-container">
+          <div class="video-item">
+            <video poster="" id="comp_avatar_1" autoplay controls muted loop playsinline>
+              <source src="./pics/demo3r.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">original</p>
+          </div>
+          
+          <div class="video-item">
+            <video poster="" id="comp_avatar_2" autoplay controls muted loop playsinline>
+              <source src="./pics/demo3e.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">edited results</p>
+          </div>
+        </div>
+
+        <h3 class="subtitle is-5">Prompt: Change her into a woman with thick made-up</h3>
+        
+        <!-- 视频容器，使用 Flexbox 布局 -->
+        <div class="video-container">
+          <div class="video-item">
+            <video poster="" id="comp_avatar_1" autoplay controls muted loop playsinline>
+              <source src="./pics/demo4r.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">original</p>
+          </div>
+          
+          <div class="video-item">
+            <video poster="" id="comp_avatar_2" autoplay controls muted loop playsinline>
+              <source src="./pics/demo4e.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">edited results</p>
+          </div>
+        </div>
+
+        <h3 class="subtitle is-5">Prompt: Change her into oil painting style</h3>
+        
+        <!-- 视频容器，使用 Flexbox 布局 -->
+        <div class="video-container">
+          <div class="video-item">
+            <video poster="" id="comp_avatar_5" autoplay controls muted loop playsinline>
+              <source src="./pics/demo5r.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">original</p>
+          </div>
+          
+          <div class="video-item">
+            <video poster="" id="comp_avatar_6" autoplay controls muted loop playsinline>
+              <source src="./pics/demo5e.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">edited results</p>
+          </div>
+        </div>
+
+        <h2 class="title is-3">The Editing Results of Our Method: Neural Style Transfer+FYM</h2>
+        
+        <h3 class="subtitle is-5">Prompt:</h3>
+        <img src="./pics/style.jpg" alt="style" style="max-width: 100%; height: auto;">
+        
+        <!-- 视频容器，使用 Flexbox 布局 -->
+        <div class="video-container">
+          <div class="video-item">
+            <video poster="" id="comp_avatar_1" autoplay controls muted loop playsinline>
+              <source src="./pics/demo6e.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">original</p>
+          </div>
+          
+          <div class="video-item">
+            <video poster="" id="comp_avatar_2" autoplay controls muted loop playsinline>
+              <source src="./pics/demo6r.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">edited results</p>
+          </div>
+        </div>
+
+        <h2 class="title is-3">The Editing Results of Our Method: ICLight+FYM</h2>
+        
+        <h3 class="subtitle is-5">Prompt:Detailed face, sunshine, outdoor, warm atmosphere, right</h3>
+       
+        
+        <!-- 视频容器，使用 Flexbox 布局 -->
+        <div class="video-container">
+          <div class="video-item">
+            <video poster="" id="comp_avatar_1" autoplay controls muted loop playsinline>
+              <source src="./pics/demo7r.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">original</p>
+          </div>
+          
+          <div class="video-item">
+            <video poster="" id="comp_avatar_2" autoplay controls muted loop playsinline>
+              <source src="./pics/demo7e.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">edited results</p>
+          </div>
+        </div>
+
+        <h3 class="subtitle is-5">Prompt:Detailed face,neon light, city, right</h3>
+        <!-- 视频容器，使用 Flexbox 布局 -->
+        <div class="video-container">
+          <div class="video-item">
+            <video poster="" id="comp_avatar_1" autoplay controls muted loop playsinline>
+              <source src="./pics/demo8r.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">original</p>
+          </div>
+          
+          <div class="video-item">
+            <video poster="" id="comp_avatar_2" autoplay controls muted loop playsinline>
+              <source src="./pics/demo8e.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">edited results</p>
+          </div>
+        </div>
+
+        <h3 class="subtitle is-5">Prompt:Detailed face, shadow from window, right</h3>
+        <!-- 视频容器，使用 Flexbox 布局 -->
+        <div class="video-container">
+          <div class="video-item">
+            <video poster="" id="comp_avatar_1" autoplay controls muted loop playsinline>
+              <source src="./pics/demo6e.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">original</p>
+          </div>
+          
+          <div class="video-item">
+            <video poster="" id="comp_avatar_2" autoplay controls muted loop playsinline>
+              <source src="./pics/relight1.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">edited results</p>
+          </div>
+        </div>
+
+        <h3 class="subtitle is-5">Prompt:Detailed face, sunset over sea, left</h3>
+        <!-- 视频容器，使用 Flexbox 布局 -->
+        <div class="video-container">
+          <div class="video-item">
+            <video poster="" id="comp_avatar_1" autoplay controls muted loop playsinline>
+              <source src="./pics/demo4r.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">original</p>
+          </div>
+          
+          <div class="video-item">
+            <video poster="" id="comp_avatar_2" autoplay controls muted loop playsinline>
+              <source src="./pics/relight2.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">edited results</p>
+          </div>
+        </div>
+       
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* 视频容器使用 Flexbox 布局 */
+  .video-container {
+    display: flex;
+    justify-content: center; /* 居中显示视频 */
+    gap: 20px; /* 视频之间的间距 */
+    flex-wrap: wrap; /* 屏幕空间不足时换行 */
+  }
+
+  /* 单个视频项的样式 */
+  .video-item {
+    width: 25%; /* 设置每个视频的宽度（可根据需求调整） */
+    text-align: center; /* 使描述文本居中 */
+  }
+
+  /* 控制视频的尺寸 */
+  video {
+    width: 100%; /* 使视频自适应容器宽度 */
+    height: auto; /* 自动调整高度，保持视频比例 */
+  }
+
+  /* 视频描述样式 */
+  .video-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+</style>
+
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+        const videoWrappers = document.querySelectorAll('.video-wrapper');
+      
+        videoWrappers.forEach(wrapper => {
+          const defaultVideo = wrapper.querySelector('.default-video');
+          const aspectRatio = defaultVideo.videoWidth / defaultVideo.videoHeight;
+          const height = wrapper.offsetWidth / aspectRatio;
+      
+          wrapper.style.height = `${height}px`;
+      
+          wrapper.addEventListener('mouseenter', () => {
+            defaultVideo.pause();
+            hoverVideo.play();
+          });
+      
+          wrapper.addEventListener('mouseleave', () => {
+            defaultVideo.play();
+            hoverVideo.pause();
+          });
+        });
+      }); 
+      $(document).ready(function() {
+        var carouselItems = $('.carousel .item');
+        var numItems = carouselItems.length;
+        var numVideos = 5;
+        var currentIndex = 0;
+    
+        $('.carousel').on('click', function() {
+          currentIndex++;
+          if (currentIndex + numVideos <= numItems) {
+            carouselItems.removeClass('active');
+            carouselItems.slice(currentIndex, currentIndex + numVideos).addClass('active');
+          } else {
+            currentIndex = 0;
+            carouselItems.removeClass('active');
+            carouselItems.slice(currentIndex, currentIndex + numVideos).addClass('active');
+          }
+        });
+    
+        carouselItems.slice(currentIndex, currentIndex + numVideos).addClass('active');
+      });
+    </script>
+  </body>
+  </html>
