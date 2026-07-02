@@ -111,14 +111,14 @@ Head Synthesis with Audio-Driven and Blendshape-Based 3D Gaussian Splatting</h1>
 
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent advancements in audio-driven avatar animation have significantly enhanced the generation of speech-based conversational videos. Despite achieving commendable lip synchronization and video quality, existing methods often fall short in producing emotion-driven conversational videos and lack real-time generation capabilities. This paper introduces a novel framework, GaussianEmoTalker, for the editing and real-time generation of emotion-driven talking head avatars. Specifically, GaussianEmoTalker begins by constructing an identity-specific neutral emotion space using 3D Gaussian blendshapes, which is then synchronized with emotion, mesh, and audio-driven deformations. The 3D Gaussian properties are encoded into a shared implicit feature representation, which is then fused with audio features, mesh displacement-encoded features, emotion, and intensity encodings. These combined features are fed into a spatial-audio-emotion attention module to predict the offsets for each Gaussian property. Extensive experiments show that, compared to other emotion-driven animation methods, our approach achieves state-of-the-art performance in both emotional expression and animation generation.
+            Audio-driven talking head synthesis has achieved impressive progress in lip synchronization and visual quality, yet generating expressive emotional avatars with controllable intensity remains challenging, especially under real-time constraints. In this paper, we present GaussianEmoTalker, an audio-driven framework for real-time emotional talking head synthesis based on 3D Gaussian Splatting. Instead of directly predicting the final emotional avatar from speech, we formulate emotional animation as a neutral-to-emotional residual deformation problem. GaussianEmoTalker first constructs an identity-specific neutral talking space with GaussianBlendshapes, which provides high-fidelity Gaussian attributes and phoneme-synchronized neutral motion. It then predicts an emotion-conditioned residual deformation by combining mesh displacement cues, audio features, emotion categories, and intensity encodings. To fuse these heterogeneous signals, we introduce a spatial-audio-emotion attention module that estimates the offsets of Gaussian attributes for expressive and temporally stable rendering. Extensive experiments demonstrate that GaussianEmoTalker achieves competitive video quality, accurate lip synchronization, controllable emotional expression, and real-time rendering compared with recent emotional talking head methods.
         </div>
       </div>
     </div>
